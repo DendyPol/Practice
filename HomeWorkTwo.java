@@ -1,7 +1,10 @@
+package Practice;
+
 public class HomeWorkTwo {
 
     public static void main(String[] args) {
         taskOne();
+        taskTwo();
     }
 
     private static void taskOne() {
@@ -12,6 +15,18 @@ public class HomeWorkTwo {
                 a[i] = 1;
             } else a[i] = 0;
             System.out.println(a[i]);
+        }
+    }
+
+    private static void taskTwo() {
+        int[] b = new int[8];
+        int l = b.length;
+        int k = 0;
+
+        for (int i = 0; i < l; i++, k = k + 3) {
+            b[i] = k;
+
+            System.out.println(b[i]);
         }
     }
 }
