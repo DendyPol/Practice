@@ -62,7 +62,7 @@ public class HomeWorkTwo {
 
 
     private static void taskFive() {
-        int[] a = {9, 12, -121, 18, 7, 121};
+        int[] a = {9, 13, -121, 18, 7, 121};
         int b = a.length;
         int max = 0;
         int min = 0;
