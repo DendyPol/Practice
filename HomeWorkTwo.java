@@ -7,6 +7,7 @@ public class HomeWorkTwo {
         taskTwo();
         taskThree();
         taskFour();
+        taskFive();
     }
 
     private static void taskOne() {
@@ -27,7 +28,6 @@ public class HomeWorkTwo {
 
         for (int i = 0; i < l; i++, k = k + 3) {
             b[i] = k;
-
             System.out.println(b[i]);
         }
     }
@@ -54,12 +54,31 @@ public class HomeWorkTwo {
                 else if (j + i == 4) {
                     a[i][j] = 1;
                 }
-
                 System.out.print("-" + a[i][j] + "-");
             }
             System.out.println();
         }
     }
-}
+
+
+    private static void taskFive() {
+        int[] a = {9, 12, -121, 18, 7, 121};
+        int b = a.length;
+        int max = 0;
+        int min = 0;
+
+        for (int i = 0; i < b; i++) {
+            if (a[i] > max) {
+                max = a[i];
+            } else if (max < a[i]) {
+                max = a[i];
+            } else if (a[i] < min) {
+                min = a[i];
+            } else if (a[i] < min) {
+                min = a[i];
+            }
+        }
+        System.out.println("min = " + min + "\n" + "max = " + max);
+    }
 }
 
