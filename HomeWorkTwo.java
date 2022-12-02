@@ -1,4 +1,7 @@
 package Practice;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class HomeWorkTwo {
 
@@ -8,6 +11,8 @@ public class HomeWorkTwo {
         taskThree();
         taskFour();
         taskFive();
+        System.out.println(checkBalance(new int[]{3, 3, 3, 3, 6, 6}));
+        taskSeven(new Integer[]{1, 3, 5, 7, 9, 12});
     }
 
     private static void taskOne() {
@@ -80,5 +85,35 @@ public class HomeWorkTwo {
         }
         System.out.println("min = " + min + "\n" + "max = " + max);
     }
+
+    private static boolean checkBalance(int[] a) {
+        int left = 0;
+        int b = a.length;
+
+        for (int i = 0; i < b; i++) {
+            left += a[i];
+            int right = 0;
+            for (int j = 0; j < b; j++) {
+                right += (j > i) ? a[j] : 0;
+            }
+            if (left == right) {
+                System.out.println("Check = " + left + " Check = " + right);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static void taskSeven(Integer[] numbers) {
+        int n = -2;
+        System.out.println("MyMethod : " + Arrays.toString(numbers));
+
+        List<Integer> list = Arrays.asList(numbers);
+        Collections.rotate(list, n);
+        System.out.println("rotate : " + list);
+
+
+    }
 }
+
 
