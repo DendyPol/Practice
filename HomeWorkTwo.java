@@ -10,7 +10,7 @@ public class HomeWorkTwo {
     taskTwo();
     taskThree();
     taskFour();
-    taskFive();
+    taskFive(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9});
     taskSix();
     taskSeven();
     taskSevenPartTwo();
@@ -64,18 +64,17 @@ public class HomeWorkTwo {
     }
   }
 
-  private static void taskFive() {
-    int[] a = {9, 12, -121, 18, 7, 121};
-    int max = 0;
-    int min = 0;
-    for (int j : a) {
-      if (j > max) {
-        max = j;
-      } else if (j < min) {
-        min = j;
+  private static void taskFive(int[] value) {
+    int min = value[0];
+    int max = value[0];
+    for (int i : value) {
+      if (min < i) {
+        min = i;
+      } else if (max > i) {
+        max = i;
       }
     }
-    System.out.println("min = " + min + " max = " + max);
+    System.out.println(max + "\n" + min);
   }
 
   private static boolean taskSix() {
