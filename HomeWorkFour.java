@@ -141,7 +141,6 @@ public class HomeWorkFour {
     map[rowIndex][colIndex] = symbol;
   }
 
-  @SuppressWarnings("BooleanMethodIsAlwaysInverted")
   private static boolean isCellValid(int rowIndex, int colIndex) {
     if (rowIndex < 0 || rowIndex >= SIZE || colIndex < 0 || colIndex >= SIZE) {
       return false;
