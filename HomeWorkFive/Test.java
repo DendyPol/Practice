@@ -1,5 +1,10 @@
 package HomeWorkFive;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Test {
   public static void main(String[] args) {
     Person[] perArray = new Person[5];
@@ -11,14 +16,5 @@ public class Test {
     for (Person person : perArray) {
       if (person.getAge() > 40) person.printInfo();
     }
-    Person personOne = new Person();
-    personOne.setSurname("Первовский");
-    personOne.setName("Петр");
-    personOne.setPatronymic("Петрович");
-    personOne.setPosition("Начальник");
-    personOne.setEmail("perviy@java.com");
-    personOne.setPhone(89991111111L);
-    personOne.setSalary(95000);
-    personOne.setAge(51);
   }
 }
