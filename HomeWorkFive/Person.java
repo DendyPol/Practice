@@ -11,12 +11,12 @@ public class Person {
   private String patronymic;
   private String position;
   private String email;
-  private long phone;
+  private String phone;
   private double salary;
   private int age;
 
   public Person(String surname, String name, String patronymic,
-                String position, String email, long phone, int salary, int age) {
+                String position, String email, String phone, int salary, int age) {
     this.surname = surname;
     this.name = name;
     this.patronymic = patronymic;
@@ -36,10 +36,6 @@ public class Person {
       , "Почта: " + this.email + this.phone
       , "Зар.Плата: " + this.salary
       , "Возраст: " + this.age);
-    printMessage(message);
-  }
-
-  private void printMessage(String message) {
     System.out.println(message);
   }
 }
