@@ -1,7 +1,8 @@
 package HomeWorkFive;
+
 public class Test {
   public static void main(String[] args) {
-    Person[] perArray = new Person[5];
+    var perArray = new Person[5];
     perArray[0] = new Person("Первовский", "Петр", "Петрович", "Начальник", "perviy@java.com", "89991111111", 95000, 51);
     perArray[1] = new Person("Второвьев", "Владимир", "Викторович", "Замместитель начальника", "vtoroy@java.com", "89991111112", 75000, 44);
     perArray[2] = new Person("Третьев", "Тарас", "Карпатович", "Руководитель отдела", "treiy@java.com", "89991111113", 65000, 39);

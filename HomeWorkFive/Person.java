@@ -6,6 +6,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Person {
+  private Object message;
   private String surname;
   private String name;
   private String patronymic;
@@ -16,7 +17,7 @@ public class Person {
   private int age;
 
   public Person(String surname, String name, String patronymic,
-                String position, String email, String phone, int salary, int age) {
+                String position, String email, String phone, double salary, int age) {
     this.surname = surname;
     this.name = name;
     this.patronymic = patronymic;
@@ -28,14 +29,16 @@ public class Person {
   }
 
   public void printInfo() {
-    String message = String.format("%s\n%s\n%s\n%s\n%s\n%s\n%s"
-      , "Фамилия: " + this.surname
-      , "Имя: " + this.name
-      , "Отчество: " + this.patronymic
-      , "Должность: " + this.position
-      , "Почта: " + this.email + this.phone
-      , "Зар.Плата: " + this.salary
-      , "Возраст: " + this.age);
+    String message =
+      """
+        Фамилия:""" + this.surname + """
+        " Имя:""" + this.name + """
+        " Отчество:""" + this.patronymic + """
+        " Должность:""" + this.position + """
+        " Почта:""" + this.email + """
+        " Телефон:""" + this.phone + """
+        " Зар.Плата:""" + this.salary + """
+        " Возраст:""" + this.age;
     System.out.println(message);
   }
 }
