@@ -1,12 +1,11 @@
-package HomeWorkSix;
+package home_work_six;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Setter
-@Getter
 @AllArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Animal {
   protected String name;
   protected float runDistance;
@@ -15,20 +14,6 @@ public class Animal {
   protected final int MAX_RUN_DISTANCE = 500;
   protected final int MAX_JUMP_HEIGHT = 3;
   protected final int MAX_SWIM_DISTANCE = 8;
-
-  @Override
-  public String toString() {
-    return "Animal{" +
-      "name='" + name + '\'' +
-      ", runDistance=" + runDistance +
-      ", jumpHeight=" + jumpHeight +
-      ", swimDistance=" + swimDistance +
-      '}';
-  }
-
-  public void animalInfo() {
-    System.out.println(this);
-  }
 
   public void workout() {
     System.out.println("Бег на 500 метров: " + (MAX_RUN_DISTANCE <= runDistance));
