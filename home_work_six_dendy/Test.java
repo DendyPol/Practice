@@ -8,13 +8,13 @@ public class Test {
     var dogs = new Dog[2];
     dogs[0] = new Dog("Барбос", 402.6F, 1.4F, 8.4F);
     dogs[1] = new Dog("Белка", 621.8F, 3.2F, 10.1F);
-    for (Cat statOne : cats) {
-      statOne.toString();
-      statOne.workout();
+    for (Cat statsOne : cats) {
+      statsOne.toString();
+      statsOne.workout();
     }
-    for (Dog statTwo : dogs) {
-      statTwo.toString();
-      statTwo.workout();
+    for (Dog statsTwo : dogs) {
+      statsTwo.toString();
+      statsTwo.workout();
     }
   }
 }
