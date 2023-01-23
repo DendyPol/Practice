@@ -1,4 +1,4 @@
-package home_work_six;
+package home_work_six_dendy;
 
 import lombok.*;
 

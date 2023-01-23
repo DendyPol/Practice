@@ -1,4 +1,4 @@
-package home_work_six;
+package home_work_six_dendy;
 
 public class Test {
   public static void main(String[] args) {
