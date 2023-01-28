@@ -11,7 +11,7 @@ public class MainClass {
     cats[4] = new Cat("Черныш", 5, false);
     for (Cat statistic : cats) {
       statistic.eat(plate);
-      plate.toString();
+      System.out.println(plate);
       plate.addFood(4);
     }
   }
