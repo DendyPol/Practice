@@ -15,9 +15,9 @@ public class Cat {
   private boolean full;
 
   public void eat(Plate plate) {
-    if (plate.decreaseFood(appetite)) {
-      full = true;
-      System.out.println("Кот поел и доволен: " + name);
-    }
+    plate.decreaseFood(appetite);
+    System.out.println("Кот поел: " + name);
+    String isFull = !full ? "сыт" : "голоден";
+    System.out.println(isFull);
   }
 }

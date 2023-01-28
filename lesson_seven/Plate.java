@@ -12,17 +12,11 @@ import lombok.ToString;
 public class Plate {
   private int food;
 
-  public void info() {
-    System.out.println("Plate: " + food);
-  }
-
-  public boolean decreaseFood(int appetite) {
+  public void decreaseFood(int appetite) {
     if (appetite > food) {
       System.out.println("Недостаточно еды: " + (appetite - food));
-      return false;
     } else {
       food -= appetite;
-      return true;
     }
   }
 
